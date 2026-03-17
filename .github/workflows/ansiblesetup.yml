@@ -39,4 +39,11 @@ jobs:
       - name: Checking pip installed or not
         run: |
           pip --version
-        
+
+      - name: checking ansible installed or not
+        run: |
+          pip install ansible
+
+       - name: verifying ansible installed or not
+         run: ansible --version
+         
